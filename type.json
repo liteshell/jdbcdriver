@@ -1,0 +1,78 @@
+{
+         "csv": {
+            "properties": {
+               "AlarmIdentifier": {
+                  "type":"string", "index": "analyzed"
+               },
+               "Area": {
+                  "type":"string", "index": "analyzed"
+               },
+               "EventID": {
+                  "type":"string", "index": "analyzed"
+               },
+               "EventTypeName": {
+                  "type":"string", "index": "analyzed"
+               },
+               "Message": {
+                  "type":"string", "index": "analyzed"
+               },
+               "Operator": {
+                  "type":"string", "index": "analyzed"
+               },
+               "Parameter": {
+                  "type":"string", "index": "analyzed"
+               },
+               "Priority": {
+                  "type":"string", "index": "analyzed"
+               },
+               "StartTime": {
+                  "type":"string", "index": "analyzed"
+               },
+               "TagDescription": {
+                  "type":"string", "index": "analyzed"
+               },
+               "TagName": {
+                  "type":"string", "index": "analyzed"
+               },
+               "User1": {
+                  "type":"string", "index": "analyzed"
+               },
+               "User2": {
+                  "type":"string", "index": "analyzed"
+               },
+               "User3": {
+                  "type":"string", "index": "analyzed"
+               },
+               "User4": {
+                  "type":"string", "index": "analyzed"
+               },
+               "User5": {
+                  "type":"string", "index": "analyzed"
+               },
+               "User6": {
+                  "type":"string", "index": "analyzed"
+               },
+               "User7": {
+                  "type":"string", "index": "analyzed"
+               },
+               "User8": {
+                  "type":"string", "index": "analyzed"
+               },
+               "date": {
+                  "type": "date",
+                  "format": "yyyy/MM/dd HH:mm:ss||yyyy/MM/dd"
+               },
+               "system_messagetypename": {
+                  "type":"string", "index": "analyzed"
+               },
+               "text": {
+                  "type":"string", "index": "analyzed"
+               },
+               "title": {
+                  "type":"string", "index": "analyzed"
+               }
+            }
+         }
+      }
+   }
+}
