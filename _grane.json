@@ -1,0 +1,135 @@
+{
+    "job": {},
+    "preprocessor": {},
+    "processor": {
+        "generalMapping": {
+            "Company": {
+                "type": "fixed",
+                "fixed": "ST"
+            },
+            "Plant": {
+                "type": "fixed",
+                "fixed": "GRANE"
+            },
+            "Area": {
+                "type": "fixed",
+                "fixed": "SKR"
+            },
+            "Unit": {
+                "type": "fixed",
+                "fixed": ""
+            },
+            "GPS": {
+                "type": "fixed",
+                "fixed": ""
+            },
+            "Tag": {
+                "type": "delimited",
+                "delimited": 9
+            },
+            "TagDescription": {
+                "type": "delimited",
+                "delimited": 10
+            },
+            "Message": {
+                "type": "delimited",
+                "delimited": 11
+            },
+            "AlarmIdentifier": {
+                "type": "delimited",
+                "delimited": 12
+            },
+            "TimeStamp": {
+                "type": "delimited",
+                "delimited": 2
+            },
+            "User1": {
+                "type": "delimited",
+                "delimited": 6
+            },
+            "User2": {
+                "type": "delimited",
+                "delimited": 7
+            },
+            "User3": {
+                "type": "delimited",
+                "delimited": 8
+            },
+            "User4": {
+                "type": "delimited",
+                "delimited": 5
+            },
+            "User7": {
+                "type": "delimited",
+                "delimited": 4
+            },
+            "User8": {
+                "type": "delimited",
+                "delimited": 13
+            },
+            "User9": {
+                "type": "delimited",
+                "delimited": 9
+            },
+            "User10": {
+                "type": "delimited",
+                "delimited": 3
+            }
+        },
+        "eventMapping": [
+            {
+                "ALARM": {
+                    "typedection": {
+                        "type": "matchstring",
+                        "rule": {
+                            "type": "delimited",
+                            "value": 8,
+                            "substring": "New"
+                        }
+                    }
+                }
+            },
+            {
+                "ACK": {
+                    "typedection": {
+                        "type": "matchstring",
+                        "rule": {
+                            "type": "delimited",
+                            "value": 8,
+                            "substring": "Acked"
+                        }
+                    }
+                }
+            },
+            {
+                "RTN": {
+                    "typedection": {
+                        "type": "matchstring",
+                        "rule": {
+                            "type": "delimited",
+                            "value": 8,
+                            "substring": "Inactive"
+                        }
+                    }
+                }
+            },
+            {
+                "OTHER": {
+                    "typedection": {
+                        "type": "matchstring",
+                        "rule": {
+                            "type": "delimited",
+                            "value": 14,
+                            "substring": "GRANE"
+                        }
+                    }
+                }
+            },
+            {
+                "DELETE": {}
+            }
+        ],
+        "eventBasedFieldCustomizations": {},
+        "fieldManipulationValues": {}
+    }
+}
